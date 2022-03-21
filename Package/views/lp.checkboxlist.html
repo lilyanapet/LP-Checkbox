@@ -1,0 +1,17 @@
+﻿<div ng-controller="LP.Checkbox.Controller">
+
+    <ul class="unstyled lpcheckbox">
+        <li ng-repeat="item in selectedItems">
+            <input type="number"
+                   ng-value="item.sortOrder"
+                   ng-model="item.sortOrder" />
+            <label class="checkbox umb-form-check umb-form-check--checkbox">
+                <input type="checkbox" name="selectedItems"
+                       ng-value="item.key"
+                        ng-model="item.selected"
+                       ng-checked="item.selected"/>
+                {{item.val}}
+            </label>
+        </li>
+    </ul>
+</div>

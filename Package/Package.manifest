@@ -1,0 +1,29 @@
+﻿{
+  "propertyEditors": [
+    {
+      "name": "LP Checkbox",
+      "alias": "LP.Checkbox",
+      "editor": {
+        "view": "~/App_Plugins/LP.Checkbox/views/lp.checkboxlist.html",
+        "hideLabel": false,
+        "valueType": "JSON"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Api Url",
+            "description": "Add the API Url to get the list of items. api/{controller}/{action}",
+            "key": "apiUrl",
+            "view": "textstring"
+          }
+        ]
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/LP.Checkbox/js/lp.checkboxlist.controller.js"
+  ],
+  "css": [
+    "~/App_Plugins/LP.Checkbox/css/lp.styles.css"
+  ]
+}
